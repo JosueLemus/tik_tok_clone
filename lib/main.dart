@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tik_tok_clone/config/theme/app_theme.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,7 +9,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      title: 'TikTok',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme().getTheme(),
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Material App Bar'),
